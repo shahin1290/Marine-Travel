@@ -10,19 +10,16 @@
   flex-direction: column;
   align-items: center;
 }
-
 .logo {
   color: var(--main-text-color);
   font-size: var(--big-font-size);
   transition: all 0.3s ease;
-  font-weight: var(--font-semi-bold);
+  font-weight: 600;
 }
-
 nav ul {
   list-style-type: none;
   display: flex;
 }
-
 nav ul li a {
   font-size: var(--medium-font-size);
   display: inline-block;
@@ -31,7 +28,6 @@ nav ul li a {
   color: var(--tertiary-color);
   transition: 0.14s ease-in-out;
 }
-
 nav ul li a:hover,
 .logo:hover {
   color: var(--secondary-color);
@@ -135,7 +131,7 @@ nav ul li a:hover,
 
 .testimonials .author {
   font-size: var(--big-font-size);
-  font-weight: var(--font-bold);
+  font-weight: 600;
   text-align: right;
 }
 .testimonials .author::before {
@@ -168,7 +164,7 @@ nav ul li a:hover,
 .cta .title {
   font-size: var(--big-font-size);
   color: var(--main-text-color);
-  font-weight: var(--font-bold);
+  font-weight: 600;
 }
 
 footer {
@@ -181,6 +177,9 @@ footer {
 
 /* ############ 10a. Media Query, (min-width: 700px) ############ */
 @media screen and (min-width: 900px) {
+  .navWrap {
+    padding: 0 17vw;
+  }
   .hero {
     text-align: left;
     grid-template-columns: repeat(6, 1fr);
